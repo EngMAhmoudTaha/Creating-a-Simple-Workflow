@@ -11,10 +11,10 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - run: 
-        command: return 1
+          command: return 1
       - run:
-        command: echo "hello errors"
-        when: on_fail
+          command: echo "hello errors"
+          when: on_fail
 
 
 workflows:
